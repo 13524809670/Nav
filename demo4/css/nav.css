@@ -1,0 +1,31 @@
+*{margin:0px;padding:0px;}
+
+.nav{height: 40px;
+	width: 100%;
+	padding-left:100px;
+	font-size: 14px;
+	font-weight: 400;
+	list-style: none;
+	border-bottom: 8px solid #f60;
+	overflow: auto;}
+
+.nav li{float: left;
+		margin-right: 1px;}
+
+.nav  a{line-height: 40px;
+			text-decoration: none;
+			background: #707070;
+			color:#fff;
+			display: block;
+			width: 100px;
+			text-align: center;}
+
+.nav li a span{display: none;}
+
+.nav li a:hover span{display: block;
+					background: #f60;
+					font-size: 18px;}
+
+.nav li a:hover{margin-top: -40px;}
+
+

@@ -1,0 +1,60 @@
+*{margin:0px;padding:0px;}
+
+	.nav{
+			width: 800px;
+			margin:200px auto;
+			font-size: 16px;
+			font-weight: 400;
+			list-style: none;
+		}
+
+	.nav li{
+			float: left;
+			margin-right: 2px;
+			position: relative;
+		}
+	
+	.nav li a{	
+				height: 45px;
+				line-height: 45px;			
+				text-decoration: none;
+				background: #555;
+				color:#fff;
+				display: block;
+				width: 150px;
+				text-align: center;
+				border-radius: 6px;
+			}
+
+	.nav li a:hover{background: #f60;}
+
+	.nav li a:active{background: #ccffdd;color: #00c;}
+
+	/*点击一级菜单出现二级*/
+	.nav li:hover ul{display: block;}
+	/*点击一级出现二级，三级隐藏*/
+	.nav li:hover ul li ul{display: none;}
+	/*点击二级出现三级*/
+	.nav li ul li:hover ul{display: block;}
+
+	/*二级菜单定位*/
+	.nav li ul{
+				display: none;
+				list-style: none;
+				padding:0;
+				width: 150px;
+				position: absolute;
+				text-outline: 45px;
+				left:0;	
+			}
+
+	.nav li ul li{position: relative;margin-top: 1px;}
+		/*三级菜单定位*/
+	.nav li ul li ul{
+					position: absolute;
+					top:0;
+					left:152px;
+					display: none;
+					}
+
+

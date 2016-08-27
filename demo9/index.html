@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery 导航菜单</title>
+	<link rel="stylesheet" href="css/nav.css" type="text/css" />
+	<script src="js/jquery.js" ></script>
+</head>
+<body>
+	<ul class="nav">
+		<li><a href="http://http://www.imooc.com/"><span class="yes">首页</span></a></li>
+		<li><a href="http://http://www.imooc.com/">一级菜单</a>
+			<ul>
+				<span class="no"></span>
+				<li><a href="http://http://www.imooc.com/">000000000</a></li>
+				<li><a href="http://http://www.imooc.com/">111111111</a></li>
+				<li><a href="http://http://www.imooc.com/">222222222</a></li>
+				<li><a href="http://http://www.imooc.com/">333333333</a></li>
+			</ul>
+		</li>
+		<li><a href="http://http://www.imooc.com/">学习中心</a>
+			<ul>
+				<span class="no"></span>
+				<li><a href="http://http://www.imooc.com/">000000000</a></li>
+				<li><a href="http://http://www.imooc.com/">111111111</a></li>
+				<li><a href="http://http://www.imooc.com/">222222222</a></li>
+				<li><a href="http://http://www.imooc.com/">333333333</a></li>
+			</ul>
+		</li>
+		<li><a href="http://http://www.imooc.com/"><span class="yes">关于我们</span></a>
+			<ul>
+				<span class="no"></span>
+				<li><a href="http://http://www.imooc.com/">000000000</a></li>
+				<li><a href="http://http://www.imooc.com/">111111111</a></li>
+				<li><a href="http://http://www.imooc.com/">222222222</a></li>
+				<li><a href="http://http://www.imooc.com/">333333333</a></li>
+			</ul>
+		</li>
+	</ul>
+	<script>
+		$(function(){
+			$("ul li").mousemove(function(){
+				$(this).find("li").slideDown(1500);
+			});$("ul li").mouseleave(function(){
+				$(this).find("li").slideUp();
+			});
+		});//find 指找到...
+	</script>
+</body>
+</html>

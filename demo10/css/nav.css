@@ -1,0 +1,40 @@
+*{margin:0px;padding:0px;}
+
+	ul{list-style: none;}
+	
+	.nav{width: 100%;margin:100px 0 0 500px;}
+
+	ul li{
+			float:left;
+			text-align: center;
+			position: relative;
+		}
+
+		a{
+			display: block;
+			text-decoration: none;
+			color: #fff;
+			height: 45px;
+			line-height: 45px;
+			padding:0 30px;
+			background: #444;
+			border-radius: 30px;
+		}
+
+		a:hover{background: #c0f;}
+		
+		 li ul{
+		 		position: absolute;
+			 	left: 0px;
+			 	top:45px;
+			 	display: none;
+			}
+
+		 li ul li{
+		 		float: none;
+		 		margin-top: 2px;
+			 	position: relative;
+				}
+
+		/*ul li:hover ul{display: block;} css实现方法*/
+		li ul li ul{position: absolute;left:180px;top:-2px;}

@@ -1,0 +1,36 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.nav{
+		width: 1300px;
+		height: 90px;
+		background: aqua;
+		text-align: center;
+		margin:100px auto 100px auto;
+		font:bold 0/50px Arial;
+	}
+
+	.nav li{
+			list-style: none outside none;
+			display: inline-block;
+			position: relative;
+			font-size: 30px;
+			padding:15px 30px;
+			text-shadow:5px 5px 5px yellow;
+		}
+
+	.nav a,.nav a:hover{
+						text-decoration: none;
+						color: #888;
+		}
+
+	.nav a{
+			display: inline-block;
+			transition:all 0.2s ease-in;
+		}
+
+	.nav a:hover{
+			transform:rotate(15deg);
+		}

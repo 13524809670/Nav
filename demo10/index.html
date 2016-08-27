@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery 导航菜单</title>
+	<link rel="stylesheet" href="css/nav.css" type="text/css" />
+	<script src="js/nav.j"></script>
+	<script src="js/jquery.js"></script>
+	<script type="text/javascript">
+		/*function showsubmenu(li){
+			var submenu=li.$("ul")[0];
+			submenu.style.display="block";
+			}
+		function hidesubmenu(li){
+			var submenu=li.$("ul")[0];
+			submenu.style.display="none";
+			}*/  //submenu 指子菜单
+
+		$(function(){
+			$(".menu").mouseover(function(){
+				$(this).children("ul").show();
+			});
+			$(".menu").mouseout(function(){
+				$(this).children("ul").hide();
+			});
+		});//children 指子元素
+
+		$(function(){
+			$(".menu ul li").mouseover(function(){
+				$(this).children("ul").show();
+			});
+			$(".menu ul li").mouseout(function(){
+				$(this).children("ul").hide();
+			});
+		});
+	</script>
+</head>
+<body>
+	<div class="nav">
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li class="menu"><a href="#">课程大厅</a>
+				<ul>
+					<li><a href="#">javaScript</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">jQuery</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">DOM</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">HTML DOM</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">AJAX</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="menu"><a href="#">学习中心</a>
+				<ul>
+					<li><a href="#">javaScript</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">jQuery</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">DOM</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">HTML DOM</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">AJAX</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="menu"><a href="#">经典案例</a>
+				<ul>
+					<li><a href="#">javaScript</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">jQuery</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">DOM</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">HTML DOM</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">AJAX</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li class="menu"><a href="#">关于我们</a>
+				<ul>
+					<li><a href="#">javaScript</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">jQuery</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">DOM</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">HTML DOM</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+					<li><a href="#">AJAX</a>
+						<ul>
+							<li><a href="#">javaScript</a></li>
+							<li><a href="#">jQuery</a></li>
+							<li><a href="#">DOM</a></li>
+							<li><a href="#">HTML DOM</a></li>
+							<li><a href="#">AJAX</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

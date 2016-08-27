@@ -1,0 +1,51 @@
+*{
+	margin:0;
+	padding:0;
+}	
+
+	.nav{
+		width: 100%;
+		margin:100px auto 0 300px;
+		font:bold 0/50px Arial;
+	}
+
+	.nav li{
+			list-style: none;
+			display: inline-block;
+			position: relative;
+			font-size: 30px;
+			height: 90px;
+			line-height: 90px;
+			width: 230px;
+			text-shadow:5px 5px 5px aqua;
+			background: #222;
+			text-align: center;
+			margin-right: 1px;
+			margin-bottom: 1px;
+			border-radius: 30%;
+		}
+
+	.nav a,.nav a:hover{
+						text-decoration: none;
+						color: #f8f8f8;
+					}
+
+	.nav a{
+			display: inline-block;
+			transition:all 0.2s ease-in;
+		}
+
+	.nav a:hover{transform:rotate(18deg);}
+	
+	.nav li:hover ul{
+		display: block;
+	}
+	.nav li ul{
+		position: absolute;
+		left:0;
+		top:90px;
+		margin-top: 1px;
+		display: none;
+	}
+
+	

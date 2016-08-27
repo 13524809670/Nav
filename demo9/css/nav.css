@@ -1,0 +1,46 @@
+*{margin:0px;padding:0px;}
+
+ul{list-style:none;}
+.nav{
+	font-size: 18px;
+	font-weight: 700;
+	margin:200px 0 0 500px;
+}
+
+.nav li{
+		float: left;
+		margin-right: 1px;
+	}
+
+.nav li a{
+		line-height: 45px;
+		text-decoration: none;
+		background: #333;
+		color:#fff;
+		display: block;
+		width: 150px;
+		text-align: center;
+		border-radius: 10px;
+	}
+
+.nav li a:hover{background:url(../images/1324_03.png) 0 0 repeat-x;}
+
+/*点击一级菜单出现二级*/
+.nav li:hover ul{display: block;}
+
+.nav li ul{
+	display: none;
+	position: absolute;
+	}
+
+.yes{display: block;background:url(../images/1324_03.png) 0 0 repeat-x;}
+
+.no{display: block;height: 9px;background: url(../images/000_03.png) 45px 0 no-repeat;}
+
+
+
+
+
+
+
+
